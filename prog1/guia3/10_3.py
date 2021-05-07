@@ -10,10 +10,10 @@ lluvia_total = 0
 for i in range(7):
     lluvia_total = lluvia_total + lluvia_por_dia[i]
 
-print("Total de lluvia caída en la semana: " + str(lluvia_total) + " ml.")
+print("\n --> Total de lluvia caída en la semana: " + str(lluvia_total) + " ml.")
 
 lluvia_maxima = 0
 for i in range(7):
     if lluvia_maxima <= lluvia_por_dia[i]:
         lluvia_maxima = lluvia_por_dia[i]
-print("Día que más llovió: " + dias_semana[lluvia_por_dia.index(lluvia_maxima)])
+print("\n -->Día que más llovió: " + dias_semana[lluvia_por_dia.index(lluvia_maxima)])
