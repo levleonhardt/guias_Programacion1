@@ -1,13 +1,13 @@
 #Decir cuántas veces se repite una letra cualquiera, en un texto dado. Por recorrido.
 
-s = input("Ingrese un texto: ")
+texto = input("Ingrese un texto: ")
 letra = input("Ingrese una letra para corroborar cuántas veces se repite: ")
 
 repeticiones=0
 
-if letra in s:
-    for i in range(len(s)):
-        if s[i] == letra:
+if letra in texto:
+    for i in range(len(texto)):
+        if texto[i] == letra:
            repeticiones = repeticiones +1
     print("La letra se repite " + str(repeticiones) + " veces.")
 else:
